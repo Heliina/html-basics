@@ -1,0 +1,105 @@
+/* @import url('./another.css') screen and (max-width:500px); */
+.some {
+  border: 3px solid green;
+}
+/* .some .other {
+  background-color: purple;
+  height: 50px;
+  margin: 10px;
+} */
+.some > .other {
+  background-color: purple;
+  height: 50px;
+  margin: 10px;
+}
+a[title="notitle"] {
+  font-size: 20px;
+  color: red;
+}
+/* a:link{
+
+} */
+a:hover {
+  color: green;
+}
+a:visited {
+  color: navy;
+}
+
+/* .element:first-child{
+  border: 2px solid red;
+  margin: 20px;
+} */
+.element:nth-child(2) {
+  border: 2px solid red;
+  margin: 20px;
+}
+
+a:not(.other) {
+  font-style: italic;
+}
+
+@media only screen and (min-width: 500px) {
+  #content,
+  nav {
+    border: 1px solid green;
+    height: 100px;
+    margin: 15px;
+  }
+  .display-block {
+    display: block;
+    border: 4px dashed green;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .display-block {
+    display: none;
+  }
+}
+
+/* p{
+  color: blue;  
+  font-family: 'Noto Sans Display', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+   text-align: center; 
+  text-decoration: overline;
+
+  line-height: 40px;
+} */
+
+.first-paragraph {
+  color: blue; /*To change the element color*/
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+  line-height: 40px;
+  border: 2px dashed red;
+  /* margin: 10px; */
+  padding: 50px;
+}
+
+.second-paragraph {
+  color: blue; /*To change the element color*/
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+  margin: auto;
+  line-height: 40px;
+  border: 5px dashed red;
+  /* margin: 10px; */
+  /*padding: 10px 30px 10px 40px; (top, right, bottom, left) */
+  padding-left: 10px;
+  padding-right: 30px;
+  margin-left: 10px;
+}
+.italic {
+  font-style: italic;
+  color: orange;
+  border: 1px dashed orange;
+}
